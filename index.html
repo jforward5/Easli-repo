@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easli — AI Mood Coach</title>
+    <meta name="description" content="Your personal AI mood coach. Daily check-ins, CBT coaching, HealthKit insights — 100% private, on-device.">
+    <style>
+        :root {
+            --orange: #F5A623;
+            --orange-light: #FFF8EE;
+            --bg: #FFFDF9;
+            --text: #1A1A1A;
+            --muted: #6B6B6B;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 1.5rem 2rem;
+        }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #F5A623, #E8941C);
+            border-radius: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: white;
+            font-weight: 700;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        header .subtitle {
+            color: var(--muted);
+            font-size: 1.15rem;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+        .badge {
+            display: inline-block;
+            margin-top: 1.5rem;
+        }
+        .badge img {
+            height: 50px;
+        }
+        main {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem 4rem;
+        }
+        .features {
+            display: grid;
+            gap: 1.25rem;
+            margin: 2rem 0;
+        }
+        .feature {
+            background: var(--orange-light);
+            border: 1px solid #F0E6D6;
+            border-radius: 12px;
+            padding: 1.25rem;
+        }
+        .feature h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+        }
+        .feature p {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin: 0;
+        }
+        .privacy-callout {
+            text-align: center;
+            padding: 2rem;
+            background: #F0F0F0;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        .privacy-callout h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .privacy-callout p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        .pricing {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .pricing p {
+            font-size: 1rem;
+            color: var(--muted);
+        }
+        .pricing strong {
+            color: var(--text);
+        }
+        a { color: var(--orange); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            border-top: 1px solid #E8E4DF;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        footer a { color: var(--muted); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="app-icon">E</div>
+        <h1>Easli</h1>
+        <p class="subtitle">Your personal AI mood coach — 100% private, on-device. Daily check-ins, CBT coaching, and HealthKit insights.</p>
+    </header>
+    <main>
+        <div class="features">
+            <div class="feature">
+                <h3>Daily Mood Check-Ins</h3>
+                <p>Rate your mood, select emotions, log activities and social context. Track your emotional journey over time.</p>
+            </div>
+            <div class="feature">
+                <h3>AI-Powered Coaching</h3>
+                <p>Personalized insights based on CBT principles. All AI runs on-device — your data never leaves your phone.</p>
+            </div>
+            <div class="feature">
+                <h3>CBT Exercises</h3>
+                <p>Guided breathing, gratitude journaling, and mindfulness practices tailored to your current mood.</p>
+            </div>
+            <div class="feature">
+                <h3>HealthKit Integration</h3>
+                <p>Discover correlations between your mood and sleep, exercise, heart rate, and step count.</p>
+            </div>
+            <div class="feature">
+                <h3>Insights &amp; Journal</h3>
+                <p>Visualize emotional trends, discover patterns, and browse your complete mood history.</p>
+            </div>
+            <div class="feature">
+                <h3>Home Screen Widgets</h3>
+                <p>Quick mood summaries and check-in reminders right on your Home Screen.</p>
+            </div>
+        </div>
+
+        <div class="privacy-callout">
+            <h3>100% Private</h3>
+            <p>All data stays on your device. No accounts, no cloud, no tracking. AI processing runs locally using Apple's on-device models.</p>
+        </div>
+
+        <div class="pricing">
+            <p><strong>21-day free trial</strong>, then $2.99/month or $19.99/year.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Joel Brecker. All rights reserved.</p>
+        <p><a href="index.html">Easli</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="support.html">Support</a></p>
+    </footer>
+</body>
+</html>
