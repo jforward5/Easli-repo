@@ -3,8 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easli — AI Mood Coach</title>
-    <meta name="description" content="Your personal AI mood coach. Daily check-ins, CBT coaching, HealthKit insights — 100% private, on-device.">
+    <title>Easli: Private AI Mood Coach for iPhone and iPad</title>
+    <meta name="description" content="Your personal AI mood coach. Daily check-ins, CBT coaching, and HealthKit insights, all private and on your device.">
+    <link rel="canonical" href="https://jforward5.github.io/Easli-repo/">
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#F5A623">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Easli">
+    <meta property="og:title" content="Easli: Private AI Mood Coach for iPhone and iPad">
+    <meta property="og:description" content="Your personal AI mood coach. Daily check-ins, CBT coaching, and HealthKit insights, all private and on your device.">
+    <meta property="og:url" content="https://jforward5.github.io/Easli-repo/">
+    <meta property="og:image" content="https://jforward5.github.io/Easli-repo/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Easli app icon beside three iPhone screens showing the home, coaching, and insights views">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Easli: Private AI Mood Coach for iPhone and iPad">
+    <meta name="twitter:description" content="Your personal AI mood coach. Daily check-ins, CBT coaching, and HealthKit insights, all private and on your device.">
+    <meta name="twitter:image" content="https://jforward5.github.io/Easli-repo/assets/og-image.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobileApplication",
+      "name": "Easli",
+      "operatingSystem": "iOS 26 or later",
+      "applicationCategory": "HealthApplication",
+      "description": "Your personal AI mood coach. Daily check-ins, CBT coaching, and HealthKit insights, all private and on your device.",
+      "url": "https://jforward5.github.io/Easli-repo/",
+      "image": [
+        "https://jforward5.github.io/Easli-repo/assets/search-1x1.jpg",
+        "https://jforward5.github.io/Easli-repo/assets/search-4x3.jpg",
+        "https://jforward5.github.io/Easli-repo/assets/search-16x9.jpg"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "2.99",
+          "priceCurrency": "USD",
+          "description": "Monthly subscription"
+        },
+        {
+          "@type": "Offer",
+          "price": "19.99",
+          "priceCurrency": "USD",
+          "description": "Yearly subscription"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "What is Easli?",
+      "description": "A one-minute look at Easli: mood check-ins, coaching, insights, journal, and guided exercises.",
+      "thumbnailUrl": [
+        "https://jforward5.github.io/Easli-repo/assets/easli-explainer-poster.jpg"
+      ],
+      "uploadDate": "2026-11-03",
+      "duration": "PT58S",
+      "contentUrl": "https://jforward5.github.io/Easli-repo/assets/easli-explainer.mp4"
+    }
+  ]
+}
+    </script>
     <style>
         :root {
             --orange: #F5A623;
@@ -118,6 +181,15 @@
             font-size: 0.85rem;
         }
         footer a { color: var(--muted); }
+        .hero { max-width: 1000px; margin: 1.5rem auto 0; }
+        .hero img { display: block; width: 100%; height: auto; border-radius: 20px; }
+        .media-section { margin: 0 0 3rem; }
+        .media-section h2 { font-size: 1.5rem; margin-bottom: 1rem; text-align: center; }
+        .explainer { display: block; width: 100%; height: auto; border-radius: 16px; background: #000; }
+        .gallery { display: flex; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.75rem; scroll-snap-type: x mandatory; }
+        .gallery figure { flex: 0 0 200px; scroll-snap-align: start; }
+        .gallery img { display: block; width: 100%; height: auto; border-radius: 18px; border: 1px solid #eee3d0; }
+        .gallery figcaption { margin-top: 0.4rem; font-size: 0.85rem; color: var(--muted); text-align: center; }
     </style>
 </head>
 <body>
@@ -125,8 +197,29 @@
         <div class="app-icon">E</div>
         <h1>Easli</h1>
         <p class="subtitle">Your personal AI mood coach — 100% private, on-device. Daily check-ins, CBT coaching, and HealthKit insights.</p>
+        <div class="hero"><img src="assets/header-hero.jpg" width="2000" height="900" alt="Three iPhones showing Easli's home, coaching, and insights screens"></div>
     </header>
     <main>
+        <section class="media-section">
+            <h2>See how it works</h2>
+            <video class="explainer" controls preload="metadata" playsinline poster="assets/easli-explainer-poster.jpg" width="1920" height="1080">
+                <source src="assets/easli-explainer.mp4" type="video/mp4">
+                <track kind="captions" src="assets/easli-explainer.vtt" srclang="en" label="English">
+                <a href="assets/easli-explainer.mp4">Download the Easli explainer video</a>
+            </video>
+        </section>
+        <section class="media-section">
+            <h2>A look inside</h2>
+            <div class="gallery" tabindex="0" aria-label="App screenshots">
+                <figure><img src="assets/screens/home.jpg" width="660" height="1434" loading="lazy" alt="Easli home screen"><figcaption>Home</figcaption></figure>
+                <figure><img src="assets/screens/emotions.jpg" width="660" height="1434" loading="lazy" alt="Easli name your emotions screen"><figcaption>Name your emotions</figcaption></figure>
+                <figure><img src="assets/screens/activities.jpg" width="660" height="1434" loading="lazy" alt="Easli log your day screen"><figcaption>Log your day</figcaption></figure>
+                <figure><img src="assets/screens/coach.jpg" width="660" height="1434" loading="lazy" alt="Easli coaching screen"><figcaption>Coaching</figcaption></figure>
+                <figure><img src="assets/screens/insights.jpg" width="660" height="1434" loading="lazy" alt="Easli insights screen"><figcaption>Insights</figcaption></figure>
+                <figure><img src="assets/screens/journal.jpg" width="660" height="1434" loading="lazy" alt="Easli journal screen"><figcaption>Journal</figcaption></figure>
+                <figure><img src="assets/screens/breathing.jpg" width="660" height="1434" loading="lazy" alt="Easli guided breathing screen"><figcaption>Guided breathing</figcaption></figure>
+            </div>
+        </section>
         <div class="features">
             <div class="feature">
                 <h3>Daily Mood Check-Ins</h3>
